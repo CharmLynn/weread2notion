@@ -200,7 +200,7 @@ def get_chapter_info(bookId):
 
 def insert_to_notion(bookName, bookId, cover, sort, author,isbn,rating,categories):
     """插入到notion"""
-    time.sleep(0.3)
+    time.sleep(3)
     parent = {
         "database_id": database_id,
         "type": "database_id"
