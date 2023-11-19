@@ -178,6 +178,7 @@ def check(bookId):
         }
     }
     response = client.databases.query(database_id=database_id, filter=filter)
+    print(database_id)
     for result in response["results"]:
         time.sleep(0.3)
         client.blocks.delete(block_id=result["id"])
